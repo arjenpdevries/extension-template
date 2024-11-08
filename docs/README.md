@@ -9,6 +9,9 @@ git clone --recurse-submodules https://github.com/<you>/<your-new-extension-repo
 Note that `--recurse-submodules` will ensure DuckDB is pulled which is required to build the extension.
 
 ## Building
+### Build Performance
+Before using this template, we highly recommend setting up [ninja](https://ninja-build.org/) and [ccache](https://ccache.dev/) setup should take only a few minutes and this reduced build times (especially rebuild times) significantly.
+
 ### Managing dependencies
 DuckDB extensions uses VCPKG for dependency management. Enabling VCPKG is very simple: follow the [installation instructions](https://vcpkg.io/en/getting-started) or just run the following:
 ```shell
